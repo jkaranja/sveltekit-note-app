@@ -7,7 +7,7 @@ import * as table from '$lib/server/db/schema';
 
 export const load: PageServerLoad = async (event) => {
 	if (!event.locals.user) {
-		return redirect(302, '/demo/lucia/login');
+		return redirect(302, '/signin');
 	}
 
 	// fetch notes
