@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+html,
+body {
+	@apply h-full overflow-hidden;
+}
+
+/* modern theme */
+@font-face {
+	font-family: 'Quicksand';
+	src: url('/fonts/Quicksand.ttf');
+	font-display: swap;
+}
+
+@layer base {
+	h1 {
+		@apply text-4xl font-bold;
+	}
+	h2 {
+		@apply text-3xl font-bold;
+	}
+	h3 {
+		@apply text-2xl font-semibold;
+	}
+	h4 {
+		@apply text-xl font-semibold;
+	}
+	h5 {
+		@apply text-lg font-semibold;
+	}
+	h6 {
+		@apply text-lg;
+	}
+}
+
+@layer components {
+	.btn {
+		@apply text-sm;
+	}
+	.input {
+		@apply py-2 outline-none border border-gray-500 rounded-lg min-w-80;
+	}
+}
+
+@layer utilities {
+	.wh-full {
+		@apply h-full w-full;
+	}
+
+	.col {
+		@apply flex flex-col;
+	}
+
+	.colc {
+		@apply col items-center;
+	}
+
+	.colcc {
+		@apply colc justify-center;
+	}
+
+	.row {
+		@apply flex flex-row;
+	}
+
+	.rowc {
+		@apply row items-center;
+	}
+
+	.rowcc {
+		@apply rowc justify-center;
+	}
+}
